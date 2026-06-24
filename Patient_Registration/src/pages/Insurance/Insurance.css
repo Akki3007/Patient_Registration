@@ -1,0 +1,328 @@
+.page-insurance {
+  display: flex;
+  flex-direction: column;
+}
+
+.insurance-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 36px;
+}
+
+.insurance-title-block h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.insurance-title-block p {
+  font-size: 14.5px;
+  color: #6b7280;
+  font-weight: 450;
+}
+
+.insurance-main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.form-input-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field-form-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.field-input-container-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fdfdfd;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.field-input-container-wrapper:focus-within {
+  border-color: #007f6e;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(0, 127, 110, 0.06);
+}
+
+.input-prefix-icon {
+  position: absolute;
+  left: 18px;
+  color: #94a3b8;
+  pointer-events: none;
+  font-size: 18px;
+}
+
+.field-custom-input-element {
+  width: 100%;
+  padding: 15px 48px 15px 48px;
+  border: none;
+  background: transparent;
+  font-size: 14.5px;
+  color: #1f2937;
+  outline: none;
+  font-family: inherit;
+}
+
+.field-custom-input-element::placeholder {
+  color: #94a3b8;
+}
+
+.insurance-file-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #cbd5e1;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 44px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.insurance-file-dropzone:hover, .insurance-file-dropzone.active {
+  border-color: #007f6e;
+  background: #f0f8f6;
+}
+
+.dropzone-cloud-icon {
+  color: #cbd5e1;
+  stroke-width: 1.5;
+  margin-bottom: 16px;
+}
+
+.dropzone-primary-info-text {
+  font-size: 14.5px;
+  color: #4b5563;
+  margin-bottom: 4px;
+}
+
+.text-highlight-teal {
+  color: #007f6e;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.dropzone-secondary-info-text {
+  font-size: 12.5px;
+  color: #94a3b8;
+}
+
+.insurance-clarity-warning-alert {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border: 1px solid #f1f5f9;
+  background: #f8fafc;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+.clarity-info-icon {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.clarity-text-message {
+  font-size: 13.5px;
+  color: #475569;
+  font-weight: 450;
+}
+
+.insurance-uploaded-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.insurance-uploaded-card {
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.insurance-card-media {
+  width: 110px;
+  height: 110px;
+  background: #f1f5f9;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.insurance-card-img-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.insurance-card-details {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.insurance-card-row-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.insurance-card-name-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.insurance-card-type-badge {
+  font-size: 10px;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.insurance-card-size-label {
+  font-size: 11.5px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.insurance-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.insurance-card-status-flag {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.insurance-card-cancel-btn {
+  background: #fff5f5;
+  border: 1px solid #fee2e2;
+  color: #ef4444;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.insurance-card-cancel-btn:hover {
+  background: #fee2e2;
+}
+
+.insurance-cancel-icon {
+  font-size: 14px;
+}
+
+.insurance-action-control-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 32px;
+}
+
+.action-button-skip-teal {
+  background: #eef6f5;
+  color: #007f6e;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.action-button-skip-teal:hover {
+  background: #e0f2f1;
+}
+
+.action-button-right-alignment-set {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.action-button-back-gray {
+  background: none;
+  border: none;
+  color: #4b5563;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.action-button-back-gray:hover {
+  color: #111827;
+}
+
+.action-button-submit-teal {
+  background: #007f6e;
+  border: 1px solid #007f6e;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 13px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.action-button-submit-teal:hover {
+  background: #006b5d;
+  border-color: #006b5d;
+}
+
+@media (max-width: 768px) {
+  .insurance-header-section {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .insurance-action-control-panel {
+    flex-direction: column-reverse;
+    gap: 16px;
+    align-items: stretch;
+  }
+  .action-button-right-alignment-set {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .action-button-back-gray {
+    text-align: center;
+    padding: 8px;
+  }
+}

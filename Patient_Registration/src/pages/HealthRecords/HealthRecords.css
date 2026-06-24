@@ -1,0 +1,388 @@
+.page-health {
+  display: flex;
+  flex-direction: column;
+}
+
+.health-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.header-text-container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.header-text-container p {
+  font-size: 14.5px;
+  color: #4b5563;
+  font-weight: 450;
+}
+
+.health-records-container-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.upload-interactive-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-group-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.health-records-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #cbd5e1;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 44px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  min-height: 200px;
+}
+
+.health-records-dropzone:hover, .health-records-dropzone.active {
+  border-color: #007f6e;
+  background: #f4fbf9;
+}
+
+.cloud-upload-illustration {
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+.dropzone-guide-primary {
+  font-size: 15px;
+  color: #4b5563;
+  margin-bottom: 6px;
+  font-weight: 450;
+}
+
+.highlight-browse {
+  color: #007f6e;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.dropzone-guide-secondary {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.supported-formats-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.strip-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.strip-items-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.strip-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.doc-icon {
+  color: #9ca3af;
+  flex-shrink: 0;
+}
+
+/* Horizontal Card Row & Card Preview Styles (Directly matching Image 1) */
+.records-scroller-viewport {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scrollbar-width: thin;
+}
+
+.records-scroller-viewport::-webkit-scrollbar {
+  height: 6px;
+}
+
+.records-scroller-viewport::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 99px;
+}
+
+.records-cards-row {
+  display: flex;
+  gap: 16px;
+  min-width: max-content;
+}
+
+.record-preview-card {
+  width: 250px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-thumbnail-container {
+  width: 100%;
+  height: 120px;
+  background: #f1f5f9;
+  overflow: hidden;
+}
+
+.card-thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info-pane {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.card-title-row {
+  display: flex;
+  align-items: center;
+}
+
+.card-title-editor {
+  width: 100%;
+  border: 1.5px solid var(--primary);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 13.5px;
+  outline: none;
+}
+
+.card-title-lockup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-display-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #1f2937;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+
+.title-edit-icon {
+  font-size: 12px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.title-edit-icon:hover {
+  color: var(--primary);
+}
+
+.card-meta-details {
+  font-size: 11.5px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.card-status-track {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.card-upload-finished-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upload-success-text {
+  font-size: 11.5px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.trash-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #f87171;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.trash-action-btn:hover {
+  background: #fef2f2;
+}
+
+.card-progress-action-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-status-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.percentage-figures {
+  font-size: 11.5px;
+  color: #64748b;
+  font-weight: 600;
+  min-width: 24px;
+}
+
+.horizontal-bar-track {
+  flex: 1;
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.horizontal-bar-fill {
+  height: 100%;
+  background: #007f6e;
+  border-radius: 99px;
+  transition: width 0.3s ease;
+}
+
+.cancel-upload-btn {
+  color: #f87171;
+  font-size: 13px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.cancel-upload-btn:hover {
+  background: #fef2f2;
+}
+
+.health-records-action-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+  border-top: 1px solid transparent;
+}
+
+.action-skip-btn {
+  background: #eef6f5;
+  color: #007f6e;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.action-skip-btn:hover {
+  background: #e0f2f1;
+}
+
+.right-action-buttons-group {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.action-back-btn {
+  background: none;
+  border: none;
+  color: #4b5563;
+  font-weight: 600;
+  font-size: 14.5px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.action-back-btn:hover {
+  color: #111827;
+}
+
+.action-submit-btn {
+  background: #005f52;
+  color: #ffffff;
+  border: 1px solid #005f52;
+  font-weight: 600;
+  font-size: 14.5px;
+  padding: 13px 26px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.action-submit-btn:hover {
+  background: #007f6e;
+  border-color: #007f6e;
+  transform: translateY(-0.5px);
+}
+
+@media (max-width: 768px) {
+  .health-section-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .strip-items-list {
+    gap: 12px;
+  }
+  .health-records-action-strip {
+    flex-direction: column-reverse;
+    gap: 16px;
+    align-items: stretch;
+  }
+  .right-action-buttons-group {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .action-back-btn {
+    text-align: center;
+    padding: 8px;
+  }
+}

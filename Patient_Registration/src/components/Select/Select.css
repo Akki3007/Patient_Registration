@@ -1,0 +1,88 @@
+.select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.select-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.select-required {
+  color: var(--error);
+  margin-left: 3px;
+}
+
+.select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select-icon {
+  position: absolute;
+  left: 16px;
+  color: var(--text-muted);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.select-field {
+  width: 100%;
+  padding: 14px 44px 14px 18px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 14.5px;
+  color: var(--text-primary);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 1.5;
+}
+
+.select-field.has-icon {
+  padding-left: 46px;
+}
+
+.select-field.placeholder-shown {
+  color: #94a3b8;
+}
+
+.select-field:hover {
+  border-color: #cbd5e1;
+}
+
+.select-field:focus {
+  border-color: var(--border-focus);
+  background: white;
+  box-shadow: 0 0 0 3px rgba(0, 127, 110, 0.1);
+}
+
+.select-chevron {
+  position: absolute;
+  right: 16px;
+  font-size: 16px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.has-error .select-field {
+  border-color: var(--border-error);
+  background: var(--error-bg);
+}
+
+.select-error {
+  font-size: 12.5px;
+  color: var(--error);
+  font-weight: 500;
+  margin-top: 2px;
+}

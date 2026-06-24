@@ -1,0 +1,225 @@
+.page-medical {
+  display: flex;
+  flex-direction: column;
+}
+
+.medical-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.medical-header .header-left h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.3px;
+  margin-bottom: 4px;
+}
+
+.medical-header .header-left p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.medical-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.medical-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.medical-field-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Consolidated layout card */
+.medical-composite-container {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.medical-composite-container:focus-within {
+  border-color: #007f6e;
+  box-shadow: 0 0 0 3px rgba(0, 127, 110, 0.08);
+}
+
+.medical-composite-container.with-counter {
+  padding-bottom: 38px; /* Room for absolute character counter */
+}
+
+/* Borderless internal textarea */
+.medical-borderless-textarea {
+  width: 100%;
+  min-height: 80px;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: #111827;
+  line-height: 1.6;
+  resize: vertical;
+  font-family: inherit;
+  padding: 0;
+}
+
+.medical-borderless-textarea::placeholder {
+  color: #9ca3af;
+}
+
+.dynamic-textarea {
+  min-height: 100px;
+}
+
+/* Tag style pills at container bottom */
+.composite-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.composite-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 99px;
+  font-size: 12.5px;
+  color: #4b5563;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
+}
+
+.pill-text {
+  line-height: 1;
+}
+
+.composite-pill-remove {
+  background: transparent;
+  border: none;
+  font-size: 10px;
+  color: #94a3b8;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 50%;
+  transition: all 0.15s;
+}
+
+.composite-pill-remove:hover {
+  color: #ef4444;
+  background-color: #fee2e2;
+}
+
+/* Absolute inside-card character counter */
+.composite-character-counter {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  font-size: 11px;
+  color: #9ca3af;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  user-select: none;
+}
+
+/* Bottom Actions Control Strip */
+.action-button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.skip-for-now-btn {
+  background: #edf5f4;
+  color: #007f6e;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.skip-for-now-btn:hover {
+  background: #dfefed;
+}
+
+.action-button-right-group {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.go-back-text-btn {
+  background: none;
+  border: none;
+  color: #4b5563;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.go-back-text-btn:hover {
+  color: #111827;
+}
+
+.add-insurance-info-btn {
+  border-radius: 6px !important;
+  background: #007f6e !important;
+  border-color: #007f6e !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 14.5px !important;
+  padding: 12px 24px !important;
+  transition: all 0.2s !important;
+  box-shadow: none !important;
+}
+
+.add-insurance-info-btn:hover {
+  background: #006b5d !important;
+}
+
+@media (max-width: 768px) {
+  .medical-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .action-button-row {
+    flex-direction: column-reverse;
+    gap: 16px;
+    align-items: stretch;
+  }
+  .action-button-right-group {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .go-back-text-btn {
+    text-align: center;
+    padding: 8px;
+  }
+}

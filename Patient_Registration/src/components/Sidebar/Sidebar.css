@@ -1,0 +1,217 @@
+.sidebar {
+  width: 300px;
+  background: var(--bg-sidebar);
+  border-right: 1px solid var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+  padding: 40px 24px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 48px;
+  padding-left: 10px;
+}
+
+.sidebar-logo {
+  width: 40px;
+  height: 40px;
+  background: #007f6e;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.logo-svg {
+  stroke-width: 2.5;
+}
+
+.sidebar-header-text h2 {
+  font-size: 17px;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.sidebar-header-text span {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.sidebar-nav {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 6px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 24px;
+  top: 16px;
+  bottom: 16px;
+  width: 2px;
+  background: #f1f5f9;
+  z-index: 1;
+}
+
+.sidebar-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  z-index: 2;
+  text-align: left;
+  color: #4b5563;
+}
+
+.sidebar-item-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.sidebar-item-icon {
+  font-size: 14px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkmark-icon {
+  stroke-width: 3px;
+}
+
+.sidebar-item-label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Active Highlight Pill */
+.sidebar-item.active {
+  background: #e6f2f0;
+  color: #007f6e;
+}
+
+.sidebar-item.active .sidebar-item-icon-container {
+  background: #007f6e;
+  border-color: #007f6e;
+}
+
+.sidebar-item.active .sidebar-item-icon {
+  color: white;
+}
+
+.sidebar-item.active .sidebar-item-label {
+  font-weight: 600;
+  color: #007f6e;
+}
+
+/* Completed Highlight Checkmark Style */
+.sidebar-item.completed .sidebar-item-icon-container {
+  background: #0d9488;
+  border-color: #0d9488;
+}
+
+.sidebar-item.completed .sidebar-item-icon {
+  color: white;
+}
+
+.sidebar-item.completed .sidebar-item-label {
+  color: #1f2937;
+}
+
+.sidebar-item.locked {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Profile Progress Card */
+.sidebar-footer {
+  margin-top: auto;
+}
+
+.profile-progress-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.progress-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4b5563;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.progress-percentage {
+  font-size: 18px;
+  font-weight: 700;
+  color: #007f6e;
+  margin-bottom: 12px;
+}
+
+.progress-bar-track {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #007f6e;
+  border-radius: 99px;
+  transition: width 0.3s ease;
+}
+
+.estimated-time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.time-icon {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+@media (max-width: 1120px) {
+  .sidebar {
+    display: none;
+  }
+}
